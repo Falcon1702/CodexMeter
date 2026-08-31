@@ -1,0 +1,35 @@
+{
+  "rateLimits": {
+    "limitId": "codex",
+    "primary": {
+      "usedPercent": 93,
+      "windowDurationMins": 300,
+      "resetsAt": 1788084900
+    },
+    "secondary": null
+  },
+  "rateLimitsByLimitId": {
+    "codex": {
+      "limitId": "codex",
+      "primary": {
+        "usedPercent": 93,
+        "windowDurationMins": 300,
+        "resetsAt": 1788084900
+      },
+      "secondary": null
+    },
+    "codex-weekly": {
+      "limitId": "codex-weekly",
+      "primary": {
+        "usedPercent": 54,
+        "windowDurationMins": 10080,
+        "resetsAt": 1788703200
+      },
+      "secondary": null
+    }
+  },
+  "rateLimitResetCredits": {
+    "availableCount": 0,
+    "credits": []
+  }
+}

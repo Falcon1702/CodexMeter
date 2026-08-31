@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codexmeter.example/schema/snapshot-v1.json",
+  "title": "CodexMeter Codex Usage Snapshot V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "accounts"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "accounts": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "displayName",
+          "remainingPercent",
+          "usedPercent",
+          "resetsAt",
+          "windowDurationMinutes",
+          "windowLabel",
+          "resetCredits",
+          "stale"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]{0,31}$"
+          },
+          "displayName": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12
+          },
+          "remainingPercent": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "usedPercent": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "resetsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "windowDurationMinutes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "windowLabel": {
+            "type": "string"
+          },
+          "resetCredits": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "stale": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

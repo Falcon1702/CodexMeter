@@ -1,0 +1,29 @@
+{
+  "mode": "fixture",
+  "cacheTtlMs": 60000,
+  "requestTimeoutMs": 10000,
+  "profiles": [
+    {
+      "id": "account-a",
+      "displayName": "A",
+      "fixture": "fixtures/account-a.json",
+      "fixtureResetAfterMinutes": 102
+    },
+    {
+      "id": "account-b",
+      "displayName": "B",
+      "fixture": "fixtures/account-b.json",
+      "fixtureResetAfterMinutes": 198
+    },
+    {
+      "id": "account-c",
+      "displayName": "C",
+      "fixture": "fixtures/account-c.json",
+      "fixtureResetAfterMinutes": 27
+    }
+  ],
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8787
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "codexmeter-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Sanitized local Codex usage bridge for the CodexMeter app.",
+  "scripts": {
+    "snapshot": "node src/cli.js snapshot --config config.example.json",
+    "serve": "node src/cli.js serve --config config.example.json",
+    "local:provision": "node scripts/local-setup.mjs provision",
+    "local:copy-token": "node scripts/local-setup.mjs copy-token",
+    "local:serve": "node scripts/local-setup.mjs serve",
+    "local:snapshot": "node scripts/local-setup.mjs snapshot",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mode": "live",
+  "cacheTtlMs": 60000,
+  "requestTimeoutMs": 10000,
+  "profiles": [
+    {
+      "id": "account-a",
+      "displayName": "A",
+      "codexHome": "/absolute/path/to/codex-profile-a"
+    },
+    {
+      "id": "account-b",
+      "displayName": "B",
+      "codexHome": "/absolute/path/to/codex-profile-b"
+    }
+  ],
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8787
+  }
+}

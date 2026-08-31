@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest a focused improvement to CodexMeter.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the smallest useful outcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Primary surface
+      options:
+        - Apple Watch complication
+        - Apple Watch app
+        - iPhone widget
+        - iPhone app
+        - Local bridge
+        - Documentation or tooling
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints or alternatives
+      description: Note relevant WidgetKit, background-refresh, privacy, or compatibility constraints.
